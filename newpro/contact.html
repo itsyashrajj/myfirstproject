@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Contact Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="html" href="home.php">
+ <style>
+    body {
+      background-image: url('https://wallpapercave.com/dwp1x/wp6897454.jpg');
+      background-size: cover;
+      font-family:aleo;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .container h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: white;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+   .hover-underline-animation {
+  display: inline-block;
+  padding: 5px 10px ;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+footer{
+    text-align: center;
+    color: black;
+   background-color: black;
+   padding: 50px;
+   background-image: url(whatsappbg1.jpg);
+} 
+.top-blue-heading{
+            background-color: #5a0606;
+            box-shadow: 2px 2px 2px 2px  white;
+            color: white;
+            width: 100%;
+            padding: 12px 24px;
+             border-style: none;
+             cursor: pointer;
+           }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+  </style>
+   <script src="https://kit.fontawesome.com/c13aa8743f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+
+    
+    
+    <div>
+    <img class="img-fluid" src="https://www.lms.holkar.org/images/holkar_logo.png?id=17" alt="">
+    </div>
+    
+    
+ </nav>
+
+ <div class="topnav container-fluid">
+  <ul class="nav justify-content-lg-start">
+ <a href="index.html"><i class="fa-solid fa-house" style="color: #f7f7f7;"></i> Home</a>
+ <a href="syllabus.html"><i class="fa-solid fa-layer-group" style="color: #fcfcfd;"></i> Syllabus</a>
+ <a href="expapers.html"><i class="fa-solid fa-paste" style="color: #ffffff;"></i> Exam Paper</a>
+ <a href="notes.html"><i class="fa-solid fa-book-open" style="color: #fcfcfc;"></i> Notes</a>
+ <a href="expapers.html"><i class="fa-solid fa-bus" style="color: #fafafa;"></i> Buspass</a>
+<a href="impweb.html"><i class="fa-solid fa-globe"></i> Quick links</a>
+ <a class="active" href="contact.html"><i class="fa-solid fa-phone" style="color: #fcfcfd;"></i> Contact</a>
+</ul>
+ </div>
+
+
+    <button class="top-blue-heading" >STUDENT CONTACT FORM</button> <br><br>
+
+  <div class="container"  data-aos="zoom-in-up">
+    <h2>Student Contact Form</h2>
+    <form action="https://formspree.io/f/mnqkawdr" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+      <div class="form-group">
+        <label for="section">Section:</label>
+		<select id="section" name="section" required>
+			<option value="" disabled selected>--Select--</option>
+			<option value="M-1">M-1</option>
+			<option value="M-2">M-2</option>
+			<option value="M-3">M-3</option>
+			<option value="M-4">M-4</option>
+			<option value="M-5">M-5</option>
+			<option value="M-6">M-6</option>
+			<option value="M-7">M-7</option>
+			<option value="M-8">M-8</option>
+			<option value="M-9">M-9</option>
+			<option value="M-10">M-10</option>
+			<option value="M-11">M-11</option>
+			<option value="M-12">M-12</option>
+			<option value="M-13">M-13</option>
+			<option value="M-14">M-14</option>
+			<option value="M-15">M-15</option>
+			<option value="M-16">M-16</option>
+			<option value="M-17">M-17</option>
+			<option value="M-18">M-18</option>
+			<option value="M-19">M-19</option>
+            <option value="outsider">Outsider</option>
+			</select>
+        
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div> <br><br>
+
+  <footer>
+    <p class="copyright">Copyright © 2023 , Govt. Holkar Science College Indore / All Rights Reserved</p>
+    <div class="nav-item" style="text-align: center;" >
+      <a class="hover-underline-animation" aria-current="page" href="https://itsmeyash.netlify.app/"><i class="fa-solid fa-user" style="color: #050505;"></i><br>About Developer</a>
+    </div>
+    <a href="https://www.instagram.com/me.yashrajj/"><i class="fa-brands fa-instagram" style="color: #e92556;"><br>Instagram</i></a>
+    <a href="https://www.facebook.com/yashraj.mishra.9619/"> <i class="fa-brands fa-facebook" style="color: #065bef;"><br>Facebook</i></a>
+    <a href="https://twitter.com/yashraj72575866/"> <i class="fa-brands fa-twitter" style="color: #0091ff;"><br>Twitter</i></a>
+     <a href="https://github.com/yashraj4u"><i class="fa-brands fa-github"><br>Github</i></a>
+     <a href="https://wa.link/9fpu1x"><i class="fa-brands fa-square-whatsapp" style="color: #0ca90a;"><br>Whatsapp</i></a>
+     <a href="https://www.youtube.com/@itstechy3230"><i class="fa-brands fa-youtube" style="color: #f90101;"><br>Youtube</i>
+     </a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

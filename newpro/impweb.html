@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="html" href="home.php">
+   <style>
+    body{
+      font-family:aleo;
+    }
+    .hover-underline-animation {
+  display: inline-block;
+  padding: 5px 10px ;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+footer{
+    text-align: center;
+    color: black;
+   background-color: black;
+   padding: 50px;
+   background-image: url(whatsappbg1.jpg);
+} 
+.top-blue-heading{
+            background-color: #5a0606;
+            box-shadow: 2px 2px 2px 2px  white;
+            color: white;
+            width: 100%;
+            padding: 12px 24px;
+             border-style: none;
+             cursor: pointer;
+           }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+            
+          
+           
+
+   </style>
+</head>
+<script src="https://kit.fontawesome.com/c13aa8743f.js" crossorigin="anonymous"></script>
+  <body>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+
+      
+      
+      <div>
+      <img class="img-fluid" src="https://www.lms.holkar.org/images/holkar_logo.png?id=17" alt="">
+      </div>
+      
+   </nav>
+
+   <div class="topnav container-fluid">
+    <ul class="nav justify-content-lg-start">
+   <a href="index.html"><i class="fa-solid fa-house" style="color: #f7f7f7;"></i> Home</a>
+   <a href="syllabus.html"><i class="fa-solid fa-layer-group" style="color: #fcfcfd;"></i> Syllabus</a>
+   <a href="expapers.html"><i class="fa-solid fa-paste" style="color: #ffffff;"></i> Exam Paper</a>
+   <a href="notes.html"><i class="fa-solid fa-book-open" style="color: #fcfcfc;"></i> Notes</a>
+   <a href="buspass.html"><i class="fa-solid fa-bus" style="color: #fafafa;"></i> Buspass</a>
+ <a class="active" href="impweb.html"><i class="fa-solid fa-earth-americas" style="color: #f8f9fc;"></i> quick links</a>
+   <a href="contact.html"><i class="fa-solid fa-phone" style="color: #fcfcfd;"></i> Contact</a>
+
+</ul>
+   </div>
+
+  <button class="top-blue-heading"> Important Website For BCA Students</button> <br><br>
+
+
+    
+  <div class="card mb-3">
+    <img src="https://wallpapercave.com/dwp1x/wp12100621.jpg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Best Coding Website
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/">GeeksforGeeks <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.javatpoint.com/">JavatPoint <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.programiz.com/">Programiz <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.tutorialspoint.com/index.htm">Tutorialspoint <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.w3schools.com/">W3School <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.freecodecamp.org/">Freecodecamp <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <img src="https://wallpapercave.com/dwp1x/wp12020067.jpg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Best Youtube Channel For Coding
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.youtube.com/@LearnCodingOfficial">Learn Coding <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@CodeWithHarry">CodewithHarry <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@takeUforward">Takeuforward <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@CodeHelp">CodeHelp <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@freecodecamp">Freecodecamp <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@OfficialDevTips">DevTips <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@HiteshChoudharydotcom">Hitesh choudhary <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@codedamn">Codedamn <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@RoadsideCoder">RoadSideCoder <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@ProgrammingwithVishal">ProgrammingWithVishal <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/@TechnicalSuneja">Technical Suneja <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  
+  <div class="card mb-3">
+    <img src="https://wallpapercave.com/dwp1x/wp10616118.jpg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Best Coding Practice Website
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.hackerrank.com/">Hacker Rank <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.codechef.com/">Code Chef <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.hackerearth.com/">HackerEarth <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://codeforces.com/">CodeForces <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.topcoder.com/">TopCoder <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://leetcode.com/">Leetcode <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <img src="https://wallpapercave.com/dwp1x/wp11110645.jpg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Best MCQ's Practice Website For Coding
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/">GeeksforGeeks <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.examveda.com/">Examveda <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.cppbuzz.com/">cppbuzz <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.indiabix.com/">Indiabix <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://mcqquestions.net/">mcqquestions <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <img src="https://wallpapercave.com/dwp1x/wp11207598.jpg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Best Website For Creating Resume Online
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.kickresume.com/en/">Kickresume <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.overleaf.com/gallery/tagged/cv">Overleaf <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.canva.com/create/resumes/">Canava <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://enhancv.com/">Enhancv <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://flowcv.com/">Flowcv.io <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://novoresume.com/">novoresume <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://zety.com/?utm_source=google&utm_medium=sem&utm_campaign=1446637678&utm_term=zety&network=g&device=c&adposition=&adgroupid=59040997080&placement=&gclid=CjwKCAjwq4imBhBQEiwA9Nx1Bquet0r3Z1FGeycuKGmR2SnzU36mCgF8ps25PeD1FlCjwnK7Kl4MLxoCV48QAvD_BwE">zety <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.livecareer.co.uk/lp/india/lukindlp01.aspx?utm_source=google&utm_medium=sem&utm_campaign=11590388553&utm_term=resume%20live&network=g&device=c&adposition=&adgroupid=115213710845&placement=&gclid=CjwKCAjwq4imBhBQEiwA9Nx1Boiurqt3fh5oMUUsJV3gD4LGQAVql00ZquF50VwgHRxB1ihFZMzH3hoCyJcQAvD_BwE">LiveCareer <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://resumegenius.com/">Resume Genius <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.myperfectresume.com/lp/mprrwzlp03.aspx?utm_source=google&utm_medium=sem&utm_campaign=203478382&utm_term=my%20perfect%20resume&network=g&device=c&adposition=&adgroupid=10709827222&gclid=CjwKCAjwq4imBhBQEiwA9Nx1BkHg0n9XKMKqMoxVzEbr8h3oMgg_jCaOY6V3z9BqLTnIYEzd-fEsjBoC5XMQAvD_BwE">MyPerfectResume <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://resumelab.com/in">ResumeLab <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.resume-now.com/">ResumeNow <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.resumenerd.com/">ResumeNerd <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.wozber.com/en-gb">Wozber <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.resumonk.com/">Resumonk <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.visualcv.com/?network=g&campaignid=8793402186&adgroupid=92365151727&match=e&k=visualcv&d=c&placement=&utm_source=google&utm_medium=cpc&utm_content=branded&gad=1&gclid=CjwKCAjwq4imBhBQEiwA9Nx1BtmS4azUwJAd09O9VF9tnHLbbLM4teT2UjoV-2i2iufQppnzdmOXRRoCX5YQAvD_BwE">VisualCV <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <img src="https://blog.hubspot.com/hs-fs/hubfs/280_How-to-Edit-PDF.png?width=595&height=400&name=280_How-to-Edit-PDF.png" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Best Website Used In Everyday Life        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.pdf24.org/en/">pdf24 <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.remove.bg/">remove.bg <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://wallpapercave.com/">wallpapercave <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.cutout.pro/">cutout.pro <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.ilovepdf.com/">iloveimg <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://cleanup.pictures/">remove object <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.ilovepdf.com/">pdf editor <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+
+  <div class="card mb-3">
+    <img src="  https://wallpapercave.com/dwp1x/wp10935143.jpg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Best Internship Website for Studets        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://internship.aicte-india.org/"> AICTE Internship<i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://internship.mea.gov.in/"> MEA Internship <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.niti.gov.in/internship"> NITI- AAYOG internship <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://dic.gov.in/"> Digital India Corporation <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://meity.gov.in/"> Ministry of Electronics & Information Technology <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+
+  <div class="card mb-3">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Top government website student must know       </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://samagra.gov.in/">Samagra <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html">PAN Card <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://uidai.gov.in/hi/">Aadhar Card <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://voters.eci.gov.in/">Voter Card <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://parivahan.gov.in/parivahan//en">Driving License <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://mpedistrict.gov.in/MPL/index.aspx">MPedistrict <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://mprojgar.gov.in/">Rojgar Panjiyan <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.cbse.gov.in/cbsenew/cbse.html">CBSE <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://mpbse.nic.in/">MP Board <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.nta.ac.in/medicalexam">NEET <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://jeemain.nta.nic.in/">JEE <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://ssc.nic.in/">SSC <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://mppsc.mp.gov.in/">MPPSC <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://epravesh.mponline.gov.in/">ePravesh <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://dte.mponline.gov.in/portal/services/onlinecounselling/counshomepage/home.aspx">DTE <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://sambal.mp.gov.in/">Sambal yojna <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://cybercrime.gov.in/">cyber crime <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.myscheme.gov.in/"> My Govt scheme <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <img src="https://wallpapercave.com/dwp1x/wp11030576.jpg" alt="...">
+    <div class="card-body">
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-code"></i> Top AI tools        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="">AI youtube Summarise <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI business assistant <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI meeting assistant <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI video documantation <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI logo generator <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI tool store <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">ChatGpt for pdf <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI video editor <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI writing content <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI presentation maker <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">write blog, content with AI <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">spelling & grammer cheaker AI <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI content summerizer <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI designing tool <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://chat.openai.com/">ChatGPT <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="">AI coding assistant <i class="fa-solid fa-up-right-from-square"></i></a></li>
+          <li><a class="dropdown-item" href="https://www.useblackbox.io/">Blackbox <i class="fa-solid fa-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+
+
+
+      
+
+      <footer>
+         <p class="copyright">Copyright © 2023 , Govt. Holkar Science College Indore / All Rights Reserved</p>
+     
+         <div class="nav-item" style="text-align: center;" >
+           <a class="hover-underline-animation" aria-current="page" href="https://itsmeyash.netlify.app/"><i class="fa-solid fa-user" style="color: #050505;"></i><br>About Developer</a>
+         </div>
+         <a href="https://www.instagram.com/me.yashrajj/"><i class="fa-brands fa-instagram" style="color: #e92556;"><br>Instagram</i></a>
+        <a href="https://www.facebook.com/yashraj.mishra.9619/"> <i class="fa-brands fa-facebook" style="color: #065bef;"><br>Facebook</i></a>
+        <a href="https://twitter.com/yashraj72575866/"> <i class="fa-brands fa-twitter" style="color: #0091ff;"><br>Twitter</i></a>
+         <a href="https://github.com/yashraj4u"><i class="fa-brands fa-github"><br>Github</i></a>
+         <a href="https://wa.link/9fpu1x"><i class="fa-brands fa-square-whatsapp" style="color: #0ca90a;"><br>Whatsapp</i></a>
+         <a href="https://www.youtube.com/@itstechy3230"><i class="fa-brands fa-youtube" style="color: #f90101;"><br>Youtube</i>
+         </a>
+       </footer>
+
+</body>
+</html>
